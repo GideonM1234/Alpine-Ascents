@@ -1,0 +1,266 @@
+header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+	padding: 1px;
+    z-index: 999;
+    background: var(--bg-color);
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav div:nth-child(1) {
+	display: flex;
+	gap: 2px;
+	position: relative;
+	top: -12px;
+}
+
+.nav div:nth-child(2) {
+	margin-top: 26px;
+	margin-right: 30px;
+	position: relative;
+	top: 2px;
+}
+
+.nav div:nth-child(3) {
+	display: flex;
+	gap: 4px;
+	margin-top: 18px;
+	position: relative;
+	right: 13px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav ul li a:hover {
+  color: var(--hover-color); /* Hover color */
+  text-decoration: underline;
+}
+
+.nav ul li {
+  font-size: 20px;
+  color: black;	
+}
+
+/* Active state for the clicked link */
+.nav ul li a:focus {	
+  color: red; /* Change this to your desired active color */
+}
+
+
+
+
+
+
+.login-btn {
+	width: 100px;
+	height: 41px;
+	color: var(--text-color-white);
+	font-size: 16px;
+	border: none;
+	background-color: var(--theme-color);
+	border-radius: var(--border-radius);
+	border: 1px solid green;
+}
+
+.signup-btn {
+	width: 100px;
+	height: 40px;
+	font-size: 16px;
+	background-color: var(--bg-color);
+	border: 1px solid green;
+	border-radius: var(--border-radius);
+}
+
+.menu {
+	display: none;
+}
+
+.menu :hover{
+	color: green;
+}
+.dropdown-menu {
+	display: none;
+}
+
+.dropdown-menu.active {
+	display: block;
+}
+
+#Drop-Nav {
+	width: 100%;
+	padding: 12px;
+	background-color: burlywood;
+	border-bottom: 1px solid black;
+	box-shadow: var(--box-shadow);
+
+}
+
+.drop-nav-links {
+	font-size: 18px;
+	list-style: none;
+}
+
+.drop-nav-links li {
+	font-size: 20px;
+}
+
+.drop-nav-links li a {
+	color: rgb(109, 107, 107);
+text-decoration: none;
+}
+
+.drop-nav-links li a:hover {
+	color: white;
+text-decoration: underline;
+
+}
+
+#Drop-Nav button:nth-child(1) {
+	width: 90px;
+	height: 40px;
+	font-size: 16px;
+	background-color: var(--bg-color);
+	border: 1px solid green;
+	border-radius: var(--border-radius);
+}
+
+.bx-men :hover{
+		color: green;
+	}
+
+
+
+
+
+#Drop-Nav button:nth-child(2) {
+	width: 90px;
+	height: 41px;
+	color: var(--text-color-white);
+	font-size: 16px;
+	border: none;
+	background-color: green;
+	border-radius: var(--border-radius);
+	border: 1px solid green;
+	margin-left: 8px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 650px) {
+	.nav div:nth-child(2) {
+		display: none;
+	}
+
+	.nav div:nth-child(1) {
+		display: flex;
+		margin-left: -20px;
+		margin-top: 6px;
+	}
+
+	.nav {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+		margin-top: 6px;
+		border-bottom: 1px solid black;
+		box-shadow: var(--box-shadow);
+	}
+
+	.nav img {
+		width: 260px;
+	}
+
+	.menu {
+		display: block;
+		margin-top: 10px;
+	}
+
+	.bx-men {
+		font-size: 34px;
+	}
+
+	
+	.bx-men :hover{
+		color: green;
+	}
+
+	.nav div:nth-child(3) {
+		margin-top: 8px;
+		position: relative;
+	}
+
+	.login-btn {
+		display: none;
+	}
+
+	.signup-btn {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+	.nav div:nth-child(2) {
+		display: none;
+	}
+
+#Drop-Nav {
+	display: block;
+}
+
+	.nav div:nth-child(1) {
+		display: flex;
+		margin-left: -20px;
+		margin-top: 6px;
+	}
+
+	.nav {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+		margin-top: 6px;
+		border-bottom: 1px solid black;
+		box-shadow: var(--box-shadow);
+	}
+
+	.nav img {
+		width: 260px;
+	}
+
+	.menu {
+		display: block;
+		margin-top: 10px;
+	}
+
+	.bx-men {
+		font-size: 34px;
+	}
+
+	.nav div:nth-child(3) {
+		margin-top: 8px;
+		position: relative;
+	}
+
+	
+	.login-btn {
+		display: none;
+	}
+
+	.signup-btn {
+		display: none;
+	}
+}

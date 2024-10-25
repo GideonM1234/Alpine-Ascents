@@ -1,0 +1,49 @@
+.app-container {
+	padding: 1rem;
+}
+
+.app-container h1{
+	text-align: center;
+	font-size: 32px;
+}
+
+.stories-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.story-card {
+	background-color: burlywood;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	width: calc(33.33% - 1rem);
+}
+
+.story-card h3 {
+	margin: 0 0 0.5rem;
+}
+
+.story-card p {
+	margin: 0.5rem 0;
+}
+
+
+@media screen and (min-width:320px) and (max-width:620px) {
+	.stories-container {
+		gap: 1rem;
+		margin-top: 1rem;
+		flex-direction: column;
+}
+
+.story-card {
+	background-color: burlywood;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	width: 100%;
+}
+
+}

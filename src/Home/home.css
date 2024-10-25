@@ -1,0 +1,332 @@
+#Hero-Sec {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	top: 80px;
+	left: 65px;
+}
+
+#Hero-Sec div:nth-child(1) {
+	width: 50%;
+	position: relative;
+	top: 110px;
+}
+
+#Hero-Sec div:nth-child(1) h1 {
+	width: 100%;
+	font-size: 60px;
+}
+
+#Hero-Sec div:nth-child(2) {
+	width: 50%;
+	position: relative;
+	top: -18px;
+	left: 58px;
+}
+
+.vid {
+	width: 78%;
+	height: 650px;
+	object-fit: cover;
+}
+
+.start-btn {
+	width: 150px;
+	padding: 12px;
+	font-size: 17px;
+	color: var(--text-color-white);
+	background-color: var(--theme-color);
+	border: 1px solid green;
+	border-radius: 15px;
+}
+
+.bx {
+	font-size: 20px;
+	background-color: none;
+	position: relative;
+	top: 3px;
+}
+
+#Mission {
+	width: 95%;
+	display: block;
+	margin: auto;
+	display: flex;
+	position: relative;
+	top: 220px;
+}
+
+#Mission div:nth-child(1) {
+	width: 50%;
+}
+
+#Mission div:nth-child(1) h1 {
+	content: "";
+	font-size: 30px;
+}
+
+#Mission div:nth-child(1) h1::before {
+	content: "";
+	width: 110px;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+#Mission div:nth-child(2) {
+	width: 50%;
+}
+
+#Mission div:nth-child(2) p {
+	font-size: 18px;
+}
+
+#Mission div:nth-child(2) img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	height: 310px;
+}
+.Sec-Rev {
+	background-color: wheat;
+	padding: 25px;
+	position: relative;
+	top: 260px;
+}
+
+.Reviews {
+	width: 100%;
+	display: grid;
+	gap: 12px;
+	grid-template-columns: repeat(4, 1fr);
+	margin-left: 3%;
+}
+
+.Reviews div:nth-child(1) {
+	border-right: 1px solid black;
+}
+
+.Reviews div:nth-child(2) {
+	border-right: 1px solid black;
+}
+
+.Reviews div:nth-child(3) {
+	border-right: 1px solid black;
+}
+
+.Reviews div:nth-child(1) span {
+	display: flex;
+}
+
+.Reviews div:nth-child(1) span h1 {
+	font-size: 50px;
+}
+
+.Reviews div:nth-child(1) span p {
+	margin-top: 17px;
+	margin-left: 3px;
+	color: grey;
+}
+
+.Reviews div:nth-child(2) span {
+	display: flex;
+}
+
+.Reviews div:nth-child(2) h1 {
+	font-size: 50px;
+}
+
+.Reviews div:nth-child(2) span p {
+	width: 130px;
+	margin-top: 14px;
+	margin-left: 14px;
+	color: grey;
+}
+
+.Reviews div:nth-child(3) span {
+	display: flex;
+}
+
+.Reviews div:nth-child(3) h1 {
+	font-size: 40px;
+}
+
+.Reviews div:nth-child(3) span p {
+	margin-top: 16px;
+	margin-left: 3px;
+	color: grey;
+}
+
+.Reviews div:nth-child(4) span {
+	display: flex;
+}
+
+.Reviews div:nth-child(4) h1 {
+	font-size: 40px;
+}
+
+.Reviews div:nth-child(4) span p {
+	margin-top: 16px;
+	margin-left: 3px;
+	color: grey;
+}
+@media screen and (min-width: 320px) and (max-width: 650px) {
+	#Hero-Sec {
+		width: 97%;
+		display: block;
+		margin: auto;
+		flex-wrap: wrap;
+		position: relative;
+		top: 30px;
+		left: 0px;
+	}
+
+	#Hero-Sec div:nth-child(1) {
+		width: 100%;
+		position: relative;
+	}
+
+	#Hero-Sec div:nth-child(1) h1 {
+		font-size: 40px;
+	}
+
+	#Hero-Sec div:nth-child(2) {
+		width: 100%;
+		position: relative;
+		top: 150px;
+		left: 0px;
+	}
+
+	.vid {
+		width: 98%;
+		display: block;
+		margin: auto;
+		height: 350px;
+		object-fit: cover;
+	}
+
+	#Mission {
+		flex-wrap: wrap;
+		position: relative;
+		top: 240px;
+	}
+
+	#Mission div:nth-child(1) {
+		width: 100%;
+	}
+
+	#Mission div:nth-child(1) h1 {
+		width: 100%;
+		content: "";
+		font-size: 30px;
+		text-align: center;
+	}
+
+	#Mission div:nth-child(1) h1::before {
+		content: "";
+		width: 80px;
+
+		display: inline-block;
+		border: 1px solid black;
+	}
+
+	#Mission div:nth-child(1) h1::after {
+		content: "";
+		width: 80px;
+		display: inline-block;
+		border: 1px solid black;
+	}
+
+	#Mission div:nth-child(2) {
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.Reviews {
+		width: 100%;
+		display: grid;
+		gap: 20px;
+		grid-template-columns: repeat(2, 1fr);
+		margin-left: 3%;
+	}
+
+	.Reviews div:nth-child(1) {
+		width: 140px;
+		border-right: 1px solid black;
+	}
+
+	.Reviews div:nth-child(2) {
+		border-right: none;
+	}
+	.Reviews div:nth-child(3) {
+		border-right: 1px solid black;
+	}
+
+	.Reviews div:nth-child(4) {
+		border-right: none;
+		margin-left: 5px;
+	}
+
+	.Reviews div:nth-child(1) span p {
+		margin-top: 13px;
+		margin-left: 6px;
+		color: grey;
+	}
+
+	.Reviews div:nth-child(2) span p {
+		width: 127px;
+		margin-top: 13px;
+		margin-left: 2px;
+		color: grey;
+	}
+
+	.Reviews div:nth-child(3) span p {
+		margin-top: 6px;
+		margin-left: 6px;
+		color: grey;
+	}
+}
+
+
+
+@media screen and (min-width: 621px) and (max-width: 1024px) {
+	#Hero-Sec {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	top: 100px;
+	left: 10px;
+}
+
+#Hero-Sec div:nth-child(1) {
+	width: 60%;
+	position: relative;
+	top: 20px;
+}
+
+.vid {
+	width: 100%;
+	height: 650px;
+	object-fit: cover;
+}
+
+#Hero-Sec div:nth-child(2) {
+	width: 50%;
+	position: relative;
+	top: -18px;
+	left: -20px;
+}
+
+	.Reviews {
+		width: 100%;
+		display: grid;
+		gap: 20px;
+		grid-template-columns: repeat(3, 1fr);
+		margin-left: 3%;
+	}
+
+	}
+
+
+	

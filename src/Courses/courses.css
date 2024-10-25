@@ -1,0 +1,128 @@
+
+
+.List-cont{
+    width: 100%;
+}
+
+.List-cont img{
+    object-fit: contain;
+    object-fit: cover;
+    height: 350px;
+    width: 100%;
+}
+
+#main-core{
+
+    margin-top: 450px;
+}
+
+.cores{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4px;
+} 
+
+.cores img{
+position: relative;
+    border-radius: 20px;
+}
+
+.content{
+    width: 90%;
+    display: block;
+    margin: auto;
+    position: relative;
+    bottom: 330px; 
+    z-index: 999px; 
+ } 
+
+ .cores img:hover{
+   filter: brightness(50%);
+ }
+
+
+.pp{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.xx{
+    display: flex;
+    justify-content: space-between;
+    position: relative;  
+  top: 210px; 
+}
+
+.xx p{
+     color: white;
+    font-size: 25px; 
+}
+.xx button{
+width: 60px;
+background-color: var(--theme-color);
+border: none;
+font-size: 16px;
+border-radius: 20px;
+color: var(--text-color-white);
+padding: 7px;
+
+}
+.pp p{
+    color: white;
+    font-size: 25px;
+}
+.cores div:nth-child(1){
+
+
+    grid-column-start: span 2;
+}
+
+
+.cores div:nth-child(1) img{
+    height: 350px;
+
+}
+
+.cores div:nth-child(1) .pp{
+  margin-top: -10px; 
+}
+
+
+
+.cores div:nth-child(1) .xx{
+    position: relative;
+    top: 230px;
+
+}
+
+
+
+.cores div:nth-child(1) .xx p{ 
+    font-size: 20px;
+    color: white;
+}
+
+
+@media screen and (min-width:320px)  and (max-width:620px){
+    .cores{
+    display: grid;
+    grid-template-columns: repeat(1  ,1fr);
+    gap: 1px;
+} 
+
+.cores div:nth-child(1){
+
+
+    grid-column-start: span 1;
+}
+}
+
+@media screen and (min-width:621px)  and (max-width:1024px){
+        .cores{
+    display: grid;
+    grid-template-columns: repeat( 2    ,1fr);
+    gap: 2px;
+} 
+}

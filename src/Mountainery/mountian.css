@@ -1,0 +1,165 @@
+#Mountian-sec {
+	position: relative;
+	top: 310px;
+}
+
+#Mountian {
+	width: 100vw;
+	height: 34vw;
+	background-image: url("../assets//img/pexels-eberhardgross-1183021.jpg");
+	background-size: contain;
+	background-size: cover;
+	color: white;
+	background-repeat: no-repeat;
+}
+
+#Mountian div {
+	width: 50%;
+	top: 146px;
+	position: relative;
+	left: 50px;
+}
+
+#Mountian div h1 {
+	font-size: 39px;
+}
+
+#Mountian div p {
+	font-size: 18px;
+}
+/* Container for the Slider */
+.slider-container {
+	display: flex;
+	padding: 20px;
+	overflow: hidden; /* Hide slides outside of view */
+	width: 100%;
+	position: relative; /* Position for absolute navigation buttons */
+	top: 100px;
+}
+
+/* Slide Styles */
+.slide {
+	min-width: 100%; /* Each slide takes full width of the container */
+	transition: transform 0.5s ease-in-out; /* Smooth sliding transition */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: wheat;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styles */
+.slide-content2 img {
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+/* Content Styles */
+.slide-content {
+	width: 50%;
+	flex: 1;
+	margin-right: 20px;
+}
+
+.slide-content h1 {
+	font-size: 35px;
+}
+
+.slide-content2 {
+	width: 50%;
+}
+.nav-button {
+	/* Navigation Buttons */
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 20px;
+	border-radius: 5px;
+	z-index: 10;
+}
+
+.nav-button.prev {
+	left: 10px;
+}
+
+.nav-button.next {
+	right: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 620px) {
+	#Mountian {
+		width: 100vw;
+		height: 140vw;
+		background-image: url("../assets//img/pexels-eberhardgross-1183021.jpg");
+		background-size: contain;
+		background-size: cover;
+		color: white;
+		background-repeat: no-repeat;
+	}
+
+	#Mountian div {
+		width: 100%;
+		top: 26px;
+		position: relative;
+		left: 5px;
+	}
+
+	.slide {
+		flex-direction: column; /* Stack content vertically */
+		padding: 10px;
+		min-width: 100%;
+	}
+
+	.slide-content,
+	.slide-content2 {
+		width: 100%; /* Make both content and image full width */
+		margin: 0;
+		padding: 10px 0; /* Add some spacing between the stacked content */
+	}
+
+	.slide-content h1 {
+		font-size: 24px; /* Reduce heading size */
+	}
+
+	.slide-content p {
+		font-size: 14px; /* Adjust paragraph font size */
+	}
+
+	.slide-content2 img {
+		height: 250px; /* Reduce image height for smaller screens */
+		object-fit: cover;
+	}
+
+	/* Navigation Buttons */
+	.nav-button {
+		font-size: 16px; /* Reduce button size */
+		padding: 8px;
+	}
+}
+
+@media screen and (min-width: 621px) and (max-width: 1024px) {
+	#Mountian {
+		width: 100vw;
+		height: 70vw;
+		background-image: url("../assets//img/pexels-eberhardgross-1183021.jpg");
+		background-size: contain;
+		background-size: cover;
+		color: white;
+		background-repeat: no-repeat;
+	}
+	#Mountian div {
+		width: 70%;
+		top: 120px;
+		position: relative;
+		left: 12px;
+	}
+}	
